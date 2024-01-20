@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon spel</title>
+  <link href="style/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!--Bron png: https://icons8.com/icons/set/sound-->
+  <div id="playSoundButton">
+    <img src="fotos/icons8-sound-100.png" alt="Geluidsknop">
+  </div>
+
+  <!--Bron sound: https://instrumentalfx.co/pokemon-theme-song-download/ -->
+  <audio id="sound">
+    <source src="sound/themsong.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="top">
+    <h1>Pokémon spel</h1>
+
+    <h2>Kies 1 Pokémon uit de volgende lijst:</h2>
+  </div>
+
+  <ul>
+    <!--Bronnen van pngs pokemons: https://www.vhv.rs/-->
+    <div class="top-row">
+      <li><img src="fotos/Daco_2989182.png" alt="Poochyena" id="poochyena"></li>
+      <li><img src="fotos/Daco_3236654.png" alt="Malamar" id="Malamar"></li>
+      <li><img src="fotos/Daco_4722155.png" alt="Pikachu" id="Pikachu"></li>
+      <li><img src="fotos/Daco_493806.png" alt="Camerupt" id="Camerupt"></li>
+      <li><img src="fotos/Daco_505456.png" alt="Groudon" id="Groudon"></li>
+    </div>
+    <div class="bottom-row">
+      <li><img src="fotos/Daco_5251312.png" alt="Mewtwo" id="Mewtwo"></li>
+      <li><img src="fotos/Daco_5429756.png" alt="Pokey" id="Pokey"></li>
+      <li><img src="fotos/Daco_5396612.png" alt="Chikorita" id="Chikorita"></li>
+      <li><img src="fotos/NicePng_squirtle-png_1474808.png" alt="Squirtle" id="Squirtle"></li>
+    </div>
+  </ul>
+
+  <div class="ondertext">
+    <h2>Je keuze:</h2>
+    <ul id="chosenPokemons"></ul>
+    <button id="checkButton">Controleer keuze</button>
+    <h2>Resultaat:</h2>
+    <ul id="result"></ul>
+    <h2>Kansen over: <span id="chances">4</span></h2>
+    <button id="newGameButton" style="display: none;">Nieuw potje</button>
+  </div>
+
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>

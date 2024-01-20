@@ -1,0 +1,119 @@
+body {
+  background-image: url('../fotos/back1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.top {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+}
+
+  img {
+  width: 50%; 
+  max-width: 200px; 
+  
+}
+
+.top-row {
+
+  display: flex;
+  margin-top: 60px;
+  margin-left: 250px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ondertext {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Bron style button en disabled: https://www.w3schools.com/css/css3_buttons.asp */
+
+#newGameButton {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #20a35b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #717171;
+}
+ 
+#newGameButton:hover {
+  background-color: #128119;
+  color: #ffffff;
+}
+
+#newGameButton:active {
+  background-color: #128119;
+  box-shadow: 0 5px #2c2c2c;
+
+}
+
+#checkButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e14040;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #717171;
+}
+
+#checkButton:hover {
+  background-color: #ad1717;
+  color: #ffffff;
+}
+
+#checkButton:active {
+  background-color: #ad1717;
+  box-shadow: 0 5px #272727;
+  transform: translateY(4px);
+}
+
+#checkButton:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+<style>
+#playSoundButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+#playSoundButton img {
+  width: 60px;
+  height: 60px;
+}
+
